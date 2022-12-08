@@ -3,31 +3,7 @@ import he from "he"
 
 function Display(props){
     
-//     var options =[]
 
-//     function shuffleArray(array) {
-
-//         // console.log(props.questions)
-
-//    for (var i = array.length - 1; i > 0; i--) {
-   
-//        // Generate random number
-//        var j = Math.floor(Math.random() * (i + 1));
-                   
-//        var temp = array[i];
-//        array[i] = array[j];
-//        array[j] = temp;
-//    }
-       
-//    return array;
-// }
-    // function merge(item){
-    //     var options=[]
-    // options.push(item.correct_answer,...item.incorrect_answers)
-    // options = shuffleArray(options)
-    // return options
-    // }
-    
     const original_questions= props.questions   // taking out the first undefined element from teh array
     
     
@@ -85,18 +61,7 @@ function Display(props){
       <div className="submit-div">
      {props.checkFlag===0 && <button onClick={props.checkAns} className="submit">Check </button> }
       </div>
-      {/* <div className="submit-div">
-        {
-        props.checkFlag===0
-        ? 
-                
-        :
-        <div>
-          <h2>You scored {props.score}/5 !! </h2>
-          <button onClick={props.setPage(1)}> Play Again</button>
-        </div>
-        }
-      </div> */}
+    
     </section>
 
     )
