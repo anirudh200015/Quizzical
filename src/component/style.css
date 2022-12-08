@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+     /* background-color: #F5F7FB; */
+}
+
+body{
+     background-image: url(../assets/background3.jpg);
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;  */
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    
+}
+
+.first-page{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(98%);
+}
+
+.first-page>h1,h2{
+    color: whitesmoke;
+}
+
+.start-button{
+    background-color: #4D5B9E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50vh;
+    border: none;
+    cursor: pointer;
+}
+
+.start-button:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.list{
+    display: inline-block  ;
+    
+}
+
+ul{
+    list-style-type: none;
+    
+    
+}
+li{
+   
+     padding:    5px; 
+    cursor: pointer;
+    color: #293264;
+    border-radius: 10px;
+    border:2px solid   #293264;
+    /* margin-left:0px; */
+    /* margin-right: 5px; */
+
+}
+
+
+.ques-text{
+    color: whitesmoke;
+}
+
+.display{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 10rem;
+    /* display: flex;
+    flex-direction:column;
+    align-items: flex-start;    */
+    align-items: center;
+}
+
+.display>h1{
+    font-family: "Rubik Microbe";
+    color: blueviolet;
+}
+
+
+
+.correct{
+        background-color: #94D7A2;
+}
+
+.incorrect{
+    background-color: red;
+}
+
+
+
+.og-color{
+    background-color: #D6DBF5;
+}
+
+input[type="radio"]{
+    display: none;
+    
+}
+label{
+    
+    display: block;
+    border: 2px solid #293264;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0.3rem;
+    width: 15rem;
+    text-align: center;
+    margin-bottom: 5px;
+   color: whitesmoke;
+    /* flex-direction: row; */
+}
+
+.list-div{
+
+    display: flex;
+    gap: 1rem;
+    
+}
+
+input[type="radio"]:checked + label{
+    background: #D6DBF5;    
+}
+input[type="radio"]:checked + label::after{
+
+    content: "\f0a5";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    /* position: ; */
+    /* top: -25px; */
+
+    transform: translateX(-50%);
+    /* height: 45px;
+    width: 45px; */
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    
+    /* background: white; */
+    
+}
+
+input:disabled +label{
+
+    cursor:not-allowed;
+    
+
+}
+.submit{
+    
+    background-color: #4D5B9E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50vh;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.submit-div{
+    display: flex;
+    justify-content: center;
+}
+.submit:active{
+    
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.playAgain{
+    border-radius: 1rem;
+    background-color: #4D5B9E;
+    cursor: pointer;
+}
+.playAgain:active{
+    
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.endgame{
+    display: flex;
+    margin:1rem ;
+    justify-content: center;
+
+}
+
