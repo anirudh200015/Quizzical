@@ -90,24 +90,7 @@ function App(){
    }
 
    
-//    function handleClick(val,index){
 
-//         console.log(questions[index].isHeld)
-
-//     setQuestions(oldval => oldval.map((item,ind)=>
-//      (         
-//             ind===index 
-//             ? 
-//             {
-//                    ...item,
-//                    isHeld: !item.isHeld 
-//             }
-//             :
-//             item
-//     )))
-//     console.log(val , " : " , index)
-//    }
-    
 
    function handleChange(event,index){
        const arr=[]
@@ -138,27 +121,7 @@ function App(){
         }
         )
 
-    //         setQuestions (oldval=> oldval.map((item,ind) =>
-
-    //      (         
-    //               ind===index
-    //                 ?
-    // arr.push(     {
-    //                 ...item ,
-    //                 selected: value
-    //             }
-    //         )
-    //             :
-    //             arr.push(
-    //                 item
-    //                 )
-
-    //      )
-            
-    //     )
-        
-    //     )
-    //     console.log(questions)
+    
     }
         
     function checkAns(){
@@ -176,7 +139,7 @@ function App(){
        
    function changePage(){
     setPage(1)
-    // setQuestions(getquestions())
+    
    }
 
    function setInputs(event){
